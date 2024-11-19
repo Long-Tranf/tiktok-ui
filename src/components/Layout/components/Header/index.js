@@ -60,7 +60,7 @@ function Header() {
                         </button>
                         <FontAwesomeIcon
                             className={cx('loading')}
-                            icos={faSpinner}
+                            icon={faSpinner}
                         />
 
                         <button className={cx('search-btn')}>
