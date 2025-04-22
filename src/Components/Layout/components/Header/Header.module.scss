@@ -104,11 +104,29 @@
 }
 
 .action-btn {
+    position: relative;
     background-color: transparent;
     font-size: 2.2rem;
     color: rgb(22, 24, 35);
     padding: 4px 12px;
     cursor: pointer;
+}
+
+.icon-header {
+    font-size: 2rem;
+}
+
+.noti-num {
+    position: absolute;
+    top: 3px;
+    background-color: var(--primary);
+    font-size: 1.2rem;
+    border-radius: 999px;
+    min-width: 30px;
+    right: 12px;
+    color: var(--white);
+    font-weight: 600;
+    padding: 2px 6px;
 }
 
 .more-btn {
