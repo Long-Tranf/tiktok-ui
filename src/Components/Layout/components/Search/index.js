@@ -52,7 +52,7 @@ function Search() {
 
     const handleInputChange = (e) => {
         let value = e.target.value;
-        if (!/^\s/.test(value) && !/^\s{2,}/.test(value)) {
+        if (!value.startsWith(' ')) {
             setSearchValue(value);
         }
     };
@@ -89,7 +89,7 @@ function Search() {
                 )}
                 {loading && <FontAwesomeIcon className={cx('loading')} icon={faSpinner} />}
 
-                <button className={cx('search-btn')}>
+                <button className={cx('search-btn')} onMouseDown={(e) => e.preventDefault()}>
                     <SearchIcon />
                 </button>
             </div>

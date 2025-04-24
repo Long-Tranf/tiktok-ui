@@ -20,6 +20,10 @@
     width: var(--default-layout-width);
 }
 
+.logo-link {
+    display: flex;
+}
+
 //Action
 .actions {
     display: flex;
