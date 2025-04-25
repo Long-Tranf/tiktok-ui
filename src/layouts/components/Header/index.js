@@ -12,7 +12,7 @@ import {
     faSignOut,
 } from '@fortawesome/free-solid-svg-icons';
 
-import routesConfig from '~/config/routes';
+import config from '~/config';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import styles from './Header.module.scss';
@@ -96,7 +96,7 @@ function Header() {
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
-                <Link className={cx('logo-link')} to={routesConfig.home}>
+                <Link className={cx('logo-link')} to={config.routes.home}>
                     <img src={images.logo} alt="logo" />
                 </Link>
                 <Search />
